@@ -35,7 +35,7 @@ public class EmployeeServiceImp implements EmployeeService {
 	@Override
 	public Optional<Employee> find(int id) {
 		// TODO findByEmail method in order to get employee by id and status as we
-		// implement soft delete
+		// implement soft delete.
 
 		return repo.findByEmployeeIdAndStatus(id, true);
 	}
