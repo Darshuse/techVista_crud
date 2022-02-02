@@ -18,7 +18,7 @@ public class EmployeeServiceImp implements EmployeeService {
 
 	@Override
 	public List<Employee> findAll() {
-		// TODO FindAll method get all Embloyees as List
+		// TODO FindAll method get all Embloyees as List .
 
 		List<Employee> employeeList = repo.findAllByStatus(true);
 
