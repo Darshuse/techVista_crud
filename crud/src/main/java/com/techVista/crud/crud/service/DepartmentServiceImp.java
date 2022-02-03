@@ -39,7 +39,7 @@ public class DepartmentServiceImp implements DepartmentService {
 			updatedDepartment.get().setDepartmentId(department.getDepartmentId());
 			updatedDepartment.get().setDepartmentName(department.getDepartmentName());
 			updatedDepartment.get().setManagerId(department.getManagerId());
-			updatedDepartment.get().setStatus(department.getStatus());
+			updatedDepartment.get().setStatus(true);
 			repo.save(updatedDepartment.get());
 		}
 		return updatedDepartment;

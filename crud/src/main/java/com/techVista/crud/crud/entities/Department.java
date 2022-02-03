@@ -12,6 +12,8 @@ import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 /**
  * The persistent class for the departments database table.
  * 
@@ -32,7 +34,8 @@ public class Department implements Serializable {
 
 	@Column(name = "manager_id")
 	private int managerId;
-
+	
+	@JsonIgnore
 	@Column(name = "status")
 	private Boolean status;
 	

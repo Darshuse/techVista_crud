@@ -56,7 +56,7 @@ public class EmployeeServiceImp implements EmployeeService {
 			updatedEmployee.get().setManagerId(employee.getManagerId());
 			updatedEmployee.get().setPhoneNumber(employee.getPhoneNumber());
 			updatedEmployee.get().setSalary(employee.getSalary());
-			updatedEmployee.get().setStatus(employee.getStatus());
+			updatedEmployee.get().setStatus(true);
 			repo.save(updatedEmployee.get());
 		}
 		return updatedEmployee;
